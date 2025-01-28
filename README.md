@@ -1,0 +1,3 @@
+# Incorrect useEffect Dependency Array in React
+
+This example demonstrates a common mistake when using the `useEffect` hook in React: an incorrect dependency array that leads to unexpected behavior.  The component fetches data only when the `count` is initially 0 and never again, even after incrementing it. This is because the effect only runs when `count` changes and is equal to zero.  The solution shows how to correctly manage data fetching within `useEffect`.
